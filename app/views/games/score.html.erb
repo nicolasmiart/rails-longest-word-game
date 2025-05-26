@@ -1,0 +1,5 @@
+<h1>Result</h1>
+<p><%= @result[:message] %></p>
+<p>You took <%= @result[:time].round(0) %> seconds to answer.</p>
+<p>Your score is: <strong><%= @result[:score].round(2) %></strong></p>
+<%= link_to "Play again", new_path %>
